@@ -1,0 +1,47 @@
+<p>parent-component works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-25 p-5 bg-dark container-fluid text-white">
+    <form (submit)="addEmployee($event)">
+        
+        EmpId :<input class="form-control" type="number" name="empId"><br>
+        name   :<input class="form-control" type="text" name="name"><br>
+        Salary:<input class="form-control" type="number" name="salary"><br>
+       <!-- <input type="submit"> -->
+       
+        <button type="submit">Add</button>
+    
+    </form></div><br><br>
+
+    <div class="w-25 p-5 bg-dark container-fluid text-white">
+    <form (submit)="addPizza($event)">
+        <div>
+        Size   :<input class="form-control" type="text" name="size"><br>
+        Type   :<input class="form-control" type="text" name="type"><br>
+        Price  :<input class="form-control" type="number" name="price"><br>
+       <!-- <input type="submit"> -->
+       
+        <button type="submit">Add</button></div>
+    </form>
+    </div>
+
+
+    <!-- <pre>
+        <hr>
+        <app-display-child [objects]="employees"></app-display-child>
+        <app-display-child [objects]="pizzas"></app-display-child>
+
+
+       
+    </pre> -->
+</body>
+</html>
+
+    

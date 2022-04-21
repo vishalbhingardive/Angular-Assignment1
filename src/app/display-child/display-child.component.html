@@ -1,0 +1,18 @@
+<p>display !</p>
+
+
+<ul *ngFor="let obj of objects">
+        <li *ngFor="let propertyName of getKeys(obj)">{{obj[propertyName]}}</li>
+</ul>
+
+<!-- <ul *ngFor="let obj of objects">
+        <li *ngFor="let v of obj|keyvalue">{{v.value}}</li>
+</ul> -->
+
+<!-- <ul>
+    <li *ngFor="let obj of objects">{{obj.empId}},{{obj.name}},{{obj.salary}}
+
+
+    </li>
+</ul> -->
+
